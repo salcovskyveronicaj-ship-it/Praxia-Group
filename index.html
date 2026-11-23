@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Praxia Group | Tu operación en orden. Tu empresa con rumbo.</title>
+  <meta name="description" content="Equipo de soluciones en gestión operativa y estratégica en Córdoba y Buenos Aires. Entramos, ordenamos, medimos y lo dejamos funcionando con tu equipo. Pedí tu Mapeo Inicial." />
+
+  <!-- Tipografías oficiales (Manual de Identidad Visual v2.0): Montserrat ExtraBold + Open Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,400..700;1,75..100,600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet" />
+
+  <!-- Favicon oficial (Isotipo P de Praxia) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23062148'/%3E%3Cpath d='M22 14h19c8 0 13 4.5 13 11.5S49 37 41 37H29v-7h11.5c3.8 0 6.5-1.8 6.5-4.5S44.3 21 40.5 21H22l-4-7z' fill='%23ffffff'/%3E%3Cpath d='M12 41c4-11 13-16 26-17-10 3-17 9-20 18z' fill='%231F66AE'/%3E%3Cpath d='M16 46c3-10 11-16 22-18-8 4-14 10-16 19z' fill='%238C9095'/%3E%3Cpath d='M29 37l-7 13h14z' fill='%23E6E9EE'/%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- 1. MENÚ DE NAVEGACIÓN -->
+  <header class="navbar" id="inicio">
+    <div class="container nav-container">
+      <a href="#inicio" class="brand" aria-label="Praxia Group - Inicio">
+        <!-- Si ya tenés logo-praxia.jpg en la carpeta, se muestra automáticamente; si no, se muestra el logo vectorial oficial -->
+        <img src="logo-praxia.jpg" alt="Praxia Group" class="brand-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="brand-fallback" style="display: none;">
+          <svg class="brand-svg-nav" viewBox="0 0 270 48" height="40" role="img" aria-label="Praxia Group">
+            <defs>
+              <linearGradient id="praxia-road" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#b4b8bd"/>
+                <stop offset="100%" stop-color="#7c8085"/>
+              </linearGradient>
+            </defs>
+            <!-- Isotipo P -->
+            <path d="M10 34c3.5-12 13-18.5 29-20-12.5 3.5-20.5 10.5-24.5 21.5z" fill="#1F66AE"/>
+            <path d="M15 39c3-11 11.5-17.5 24-19.5-9.5 4-16 10.5-19 20.5z" fill="#8C9095"/>
+            <path d="M29.5 28.5L22.5 42h14z" fill="url(#praxia-road)"/>
+            <path d="M19 8h20.5c7.8 0 13 4.2 13 10.8 0 6.5-5.2 10.7-13 10.7H29.5v-5.6h9.6c4.2 0 6.8-2 6.8-5.1s-2.6-5.1-6.8-5.1H23.5z" fill="#062148"/>
+            <!-- Separador -->
+            <line x1="62" y1="7" x2="62" y2="41" stroke="#062148" stroke-width="1.6"/>
+            <!-- Logotipo PRAXIA (Montserrat ExtraBold, A sin travesaño y triángulo naranja en la primera A) -->
+            <g transform="translate(72, 33)" font-family="'Montserrat', sans-serif" font-weight="800" font-size="25" fill="#062148">
+              <text x="0" y="0">PR</text>
+              <!-- Primera A sin travesaño + triángulo naranja -->
+              <polygon points="38,0 47.5,-19 52,-19 61.5,0 55.2,0 49.7,-12 44.3,0" fill="#062148"/>
+              <polygon points="49.7,-10.5 44.8,0 54.6,0" fill="#F07C08"/>
+              <text x="63" y="0">XI</text>
+              <!-- Segunda A sin travesaño -->
+              <polygon points="94,0 103.5,-19 108,-19 117.5,0 111.2,0 105.7,-12 100.3,0" fill="#062148"/>
+            </g>
+            <!-- Group (Open Sans Bold al 80% de altura) -->
+            <text x="197" y="33" font-family="'Open Sans', sans-serif" font-weight="700" font-size="20" fill="#062148">Group</text>
+          </svg>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Navegación principal">
+        <a href="#problemas">¿Te pasa?</a>
+        <a href="#soluciones">Soluciones</a>
+        <a href="#como-trabajamos">Cómo trabajamos</a>
+        <a href="#casos">Casos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto" class="btn btn-amber btn-nav">Pedí tu Mapeo</a>
+      </nav>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 2. PORTADA (HERO) -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Equipo de soluciones en gestión operativa y estratégica</p>
+          <h1>
+            Tu operación en orden.<br />
+            <span class="text-amber">Tu empresa con rumbo.</span>
+          </h1>
+          <p class="hero-lead">
+            Entramos, ordenamos, medimos y lo dejamos funcionando con tu equipo. Precio cerrado y resultado medido.
+          </p>
+          <p class="hero-slogan">
+            <span class="slogan-base">Optimizamos procesos.</span>
+            <span class="slogan-accent">
+              Impulsamos tu negocio.
+              <svg class="slogan-underline" viewBox="0 0 220 10" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M2 7 Q110 1 218 5" fill="none" stroke="#F07C08" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </p>
+          <div class="hero-actions">
+            <a href="#contacto" class="btn btn-amber btn-lg">Pedí tu Mapeo Inicial</a>
+            <a href="#como-trabajamos" class="btn btn-outline-light btn-lg">Ver cómo trabajamos</a>
+          </div>
+          <p class="hero-trust">
+            <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Mapeo Inicial en 1 semana · Lo pagás solo si te sirve
+          </p>
+        </div>
+
+        <div class="hero-media">
+          <!-- Reemplazar este bloque por tu video de 60s de Gonzalo en planta o foto real del equipo -->
+          <div class="media-frame">
+            <img src="foto-portada.jpg" alt="Equipo de Praxia Group trabajando en planta" class="media-img" onerror="this.style.display='none';" />
+            <div class="media-placeholder">
+              <div class="play-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+              </div>
+              <p class="media-caption">Video de 60 s en planta o foto real del equipo</p>
+              <span class="media-subcaption">Córdoba · Buenos Aires</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ¿TE PASA ALGUNA DE ESTAS COSAS? -->
+    <section class="section section-light" id="problemas">
+      <div class="container">
+        <div class="section-header">
+          <h2>¿Te pasa alguna de estas cosas?</h2>
+          <p>Hacé clic en el problema que más te frena hoy para ver cómo lo resolvemos.</p>
+        </div>
+
+        <div class="symptoms-grid">
+          <button class="symptom-card" data-target="sol-operacion" data-problem="faltantes-entregas">
+            <span class="dot-coral" aria-hidden="true"></span>
+            <span class="symptom-text">Entregás tarde o te faltan materiales</span>
+          </button>
+
+          <button class="symptom-card" data-target="sol-operacion" data-problem="stock">
+            <span class="dot-coral" aria-hidden="true"></span>
+            <span class="symptom-text">Tenés stock de más y de menos</span>
+          </button>
+
+          <button class="symptom-card" data-target="sol-gestion" data-problem="numeros-seguimiento">
+            <span class="dot-coral" aria-hidden="true"></span>
+            <span class="symptom-text">Todo pasa por vos y no tenés números a tiempo</span>
+          </button>
+
+          <button class="symptom-card" data-target="sol-gestion" data-problem="numeros-seguimiento">
+            <span class="dot-coral" aria-hidden="true"></span>
+            <span class="symptom-text">Se pierden presupuestos y pedidos</span>
+          </button>
+
+          <button class="symptom-card" data-target="sol-proyectos" data-problem="obra-ampliacion">
+            <span class="dot-coral" aria-hidden="true"></span>
+            <span class="symptom-text">La obra o ampliación se atrasa y se encarece</span>
+          </button>
+
+          <button class="symptom-card" data-target="sol-gestion" data-problem="numeros-seguimiento">
+            <span class="dot-coral" aria-hidden="true"></span>
+            <span class="symptom-text">Cargás lo mismo dos veces</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. TRES SOLUCIONES, UN MISMO MÉTODO -->
+    <section class="section" id="soluciones">
+      <div class="container">
+        <div class="section-header">
+          <h2>Tres soluciones, un mismo método</h2>
+          <p>Trabajamos sobre problemas concretos, con plazo definido y un número que demuestra la mejora.</p>
+        </div>
+
+        <!-- Promesa de servicio + Iconografía oficial de los 3 pilares (Manual p. 13-14) -->
+        <div class="pillars-bar" aria-label="Pilares de Praxia Group">
+          <div class="pillars-heading">
+            <span class="pillars-title-bold">Gestión Integral.</span>
+            <span class="pillars-title-italic">Resultados concretos.</span>
+          </div>
+          <div class="pillars-items">
+            <div class="pillar-item">
+              <div class="pillar-icon" aria-hidden="true">
+                <!-- Engranaje macizo -->
+                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M19.14 12.94c.04-.31.06-.63.06-.94s-.02-.63-.06-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.49.49 0 0 0-.59-.22l-2.39.96a7.03 7.03 0 0 0-1.62-.94l-.36-2.54A.484.484 0 0 0 14 2h-4a.484.484 0 0 0-.48.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96a.49.49 0 0 0-.59.22L2.74 8.87a.48.48 0 0 0 .12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58a.49.49 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.26.41.48.41h4c.22 0 .43-.17.48-.41l.36-2.54c.59-.24 1.13-.57 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32a.49.49 0 0 0-.12-.61l-2.01-1.58zM12 15.6A3.6 3.6 0 1 1 15.6 12 3.6 3.6 0 0 1 12 15.6z"/></svg>
+              </div>
+              <span class="pillar-label">Gestión<br />Operativa</span>
+            </div>
+            <div class="pillar-divider" aria-hidden="true"></div>
+            <div class="pillar-item">
+              <div class="pillar-icon" aria-hidden="true">
+                <!-- Barras ascendentes con flecha maciza -->
+                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><rect x="4" y="14" width="3.5" height="6" rx="0.5"/><rect x="10.25" y="10.5" width="3.5" height="9.5" rx="0.5"/><rect x="16.5" y="7" width="3.5" height="13" rx="0.5"/><path d="M4 11.5l6.5-5 3.5 2.5 5-4.5V7h2V2h-5v2h2.2l-4.2 3.7-3.5-2.5L3 10.2z"/></svg>
+              </div>
+              <span class="pillar-label">Estrategia<br />y Crecimiento</span>
+            </div>
+            <div class="pillar-divider" aria-hidden="true"></div>
+            <div class="pillar-item">
+              <div class="pillar-icon" aria-hidden="true">
+                <!-- Apretón de manos macizo -->
+                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M16.5 5.5c-.8 0-1.5.3-2.1.9l-2.4 2.4c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0l2.1-2.1 4.2 4.2-1.4 1.4-2.8-2.8-.7.7 2.8 2.8-1.1 1.1-2.8-2.8-.7.7 2.8 2.8-1.1 1.1-2.8-2.8-.7.7 2.4 2.4c-.6.3-1.4.2-2-.3l-3.6-3.6c-.8-.8-.8-2.1 0-2.8l3.5-3.5c1.2-1.2 3.1-1.2 4.3 0l2.4 2.4c.5.5.5 1.3 0 1.8l-.6.6-2.5-2.5c-.4-.4-.9-.6-1.4-.6zM3.3 10.6l3.2-3.2 1.8 1.8-2.2 2.2c-1.1 1.1-1.1 2.9 0 4l2.8 2.8-1.4 1.4-4.2-4.2c-.8-.8-.8-2 0-2.8z"/></svg>
+              </div>
+              <span class="pillar-label">Acompañamiento<br />Profesional</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="solutions-grid">
+          <!-- Solución 1 -->
+          <article class="solution-card card-teal" id="sol-operacion">
+            <div class="solution-top">
+              <h3>Operación en Orden</h3>
+            </div>
+            <div class="solution-body">
+              <p class="solution-promise">Entregá a tiempo, con lo justo en stock, y dejá de perder plata en el día a día.</p>
+              <ul class="solution-list">
+                <li>Ordenamos compras, stock y depósito para cortar faltantes y urgencias.</li>
+                <li>Planificamos la semana para reducir atrasos, paradas de máquina y reprocesos.</li>
+                <li>Dejamos rutinas cortas y controles simples en cada puesto.</li>
+              </ul>
+              <div class="solution-metric">
+                <strong>Qué mejora:</strong> entregas a tiempo, faltantes y horas de parada.
+              </div>
+              <a href="#contacto" class="solution-link" data-preselect="faltantes-entregas">
+                Pedir Mapeo para mi operación →
+              </a>
+            </div>
+          </article>
+
+          <!-- Solución 2 -->
+          <article class="solution-card card-amber" id="sol-gestion">
+            <div class="solution-top">
+              <h3>Gestión a la Vista</h3>
+            </div>
+            <div class="solution-body">
+              <p class="solution-promise">Que tu empresa funcione sin que tengas que estar en todo.</p>
+              <ul class="solution-list">
+                <li>Armamos un tablero semanal simple con 5 a 8 números clave para decidir.</li>
+                <li>Ordenamos el seguimiento de presupuestos, pedidos y consultas por WhatsApp.</li>
+                <li>Dejamos que las tareas repetitivas se hagan solas con las herramientas que ya pagás.</li>
+              </ul>
+              <div class="solution-metric">
+                <strong>Qué mejora:</strong> horas ahorradas y presupuestos con seguimiento.
+              </div>
+              <a href="#contacto" class="solution-link" data-preselect="numeros-seguimiento">
+                Pedir Mapeo para mi gestión →
+              </a>
+            </div>
+          </article>
+
+          <!-- Solución 3 -->
+          <article class="solution-card card-purple" id="sol-proyectos">
+            <div class="solution-top">
+              <h3>Proyectos bajo Control</h3>
+            </div>
+            <div class="solution-body">
+              <p class="solution-promise">Que tu obra o ampliación se cumpla en tiempo, costo y calidad.</p>
+              <ul class="solution-list">
+                <li>Representamos al dueño frente a contratistas, proveedores y avances de obra.</li>
+                <li>Controlamos cronograma, presupuesto y desvíos antes de que se vuelvan caros.</li>
+                <li>Entregamos un informe semanal claro con fotos hasta la puesta en marcha.</li>
+              </ul>
+              <div class="solution-metric">
+                <strong>Qué mejora:</strong> desvío de plazo y desvío de costo.
+              </div>
+              <a href="#contacto" class="solution-link" data-preselect="obra-ampliacion">
+                Pedir Mapeo para mi proyecto →
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CÓMO TRABAJAMOS: MAPEO INICIAL + MÉTODO ORDEN -->
+    <section class="section section-light" id="como-trabajamos">
+      <div class="container">
+        <div class="section-header">
+          <h2>Cómo trabajamos: Mapeo Inicial + Método ORDEN</h2>
+          <p>Siempre los mismos 5 pasos, cualquiera sea el problema o el rubro.</p>
+        </div>
+
+        <!-- Destacado: Mapeo Inicial -->
+        <div class="mapeo-banner">
+          <div class="mapeo-info">
+            <span class="badge-teal">Primer paso sin riesgo</span>
+            <h3>Empezamos por un Mapeo Inicial de 1 semana</h3>
+            <p>
+              Recorremos tu empresa, entrevistamos a 3 o 4 personas clave y seguimos un pedido de punta a punta. En 5 días hábiles te mostramos las <strong>3 pérdidas principales en pesos</strong> y <strong>3 acciones que podés hacer mañana mismo</strong>.
+            </p>
+            <p class="mapeo-guarantee">
+              <strong>Garantía simple:</strong> se paga 100% contra entrega y solo si te sirve. Si avanzás con un programa dentro de los 30 días, se descuenta por completo.
+            </p>
+          </div>
+          <div class="mapeo-cta">
+            <a href="#contacto" class="btn btn-amber btn-lg">Pedí tu Mapeo Inicial</a>
+          </div>
+        </div>
+
+        <!-- Método ORDEN en 5 pasos -->
+        <div class="orden-wrapper">
+          <div class="orden-steps">
+            <div class="orden-step" data-step="1">
+              <div class="orden-circle bg-navy">O</div>
+              <h4>Observar</h4>
+              <p>Recorrer, entrevistar y seguir un pedido de punta a punta.</p>
+              <span class="orden-pill border-navy">Mapa con pérdidas</span>
+            </div>
+
+            <div class="orden-arrow" aria-hidden="true">→</div>
+
+            <div class="orden-step" data-step="2">
+              <div class="orden-circle bg-teal">R</div>
+              <h4>Registrar</h4>
+              <p>Medir cómo está hoy y pasarlo a pesos.</p>
+              <span class="orden-pill border-teal">Línea base firmada</span>
+            </div>
+
+            <div class="orden-arrow" aria-hidden="true">→</div>
+
+            <div class="orden-step" data-step="3">
+              <div class="orden-circle bg-purple">D</div>
+              <h4>Decidir</h4>
+              <p>Elegir 1 foco por impacto, costo y esfuerzo.</p>
+              <span class="orden-pill border-purple">Plan 90 días</span>
+            </div>
+
+            <div class="orden-arrow" aria-hidden="true">→</div>
+
+            <div class="orden-step" data-step="4">
+              <div class="orden-circle bg-amber">E</div>
+              <h4>Ejecutar</h4>
+              <p>Implementar con tu equipo y visita semanal.</p>
+              <span class="orden-pill border-amber">Mejoras funcionando</span>
+            </div>
+
+            <div class="orden-arrow" aria-hidden="true">→</div>
+
+            <div class="orden-step" data-step="5">
+              <div class="orden-circle bg-green">N</div>
+              <h4>Normalizar</h4>
+              <p>Estandarizar, capacitar y medir antes y después.</p>
+              <span class="orden-pill border-green">Cierre y manual</span>
+            </div>
+          </div>
+
+          <div class="orden-footer-note">
+            <strong>Control permanente:</strong> un número principal, reunión semanal corta, alcance escrito y cambios solo por adenda. <strong>Se termina cuando tu equipo lo sostiene 2 semanas sin nosotros.</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. RESULTADOS CON NÚMEROS (CASOS REALES) -->
+    <section class="section" id="casos">
+      <div class="container">
+        <div class="section-header">
+          <h2>Resultados con números</h2>
+          <p>Experiencia real adentro de plantas, depósitos y obras. Sin promesas vacías.</p>
+        </div>
+
+        <div class="cases-grid">
+          <article class="case-card">
+            <span class="case-tag">Industria · Producción</span>
+            <div class="case-number text-teal">400 → 1.800</div>
+            <p class="case-label">unidades por mes</p>
+            <p class="case-summary">
+              Acompañamos la industrialización y el orden operativo para multiplicar la capacidad productiva con método y control de procesos.
+            </p>
+            <button class="case-btn" data-case="caso-1">Leer el caso →</button>
+          </article>
+
+          <article class="case-card">
+            <span class="case-tag">Stock y Depósito</span>
+            <div class="case-number text-teal">-35%</div>
+            <p class="case-label">faltantes críticos en 10 semanas</p>
+            <p class="case-summary">
+              Clasificación de materiales, ubicaciones claras, mínimos de reposición y alertas automáticas para dejar de comprar de urgencia.
+            </p>
+            <button class="case-btn" data-case="caso-2">Leer el caso →</button>
+          </article>
+
+          <article class="case-card">
+            <span class="case-tag">Obras y Ampliaciones</span>
+            <div class="case-number text-teal">100%</div>
+            <p class="case-label">obras con informe semanal</p>
+            <p class="case-summary">
+              Supervisión técnica y control de contratistas con seguimiento de plazos, calidad y costos en representación directa del dueño.
+            </p>
+            <button class="case-btn" data-case="caso-3">Leer el caso →</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. NOSOTROS (EQUIPO + QUÉ NO SOMOS) -->
+    <section class="section section-light" id="nosotros">
+      <div class="container">
+        <div class="section-header">
+          <h2>Quiénes somos</h2>
+          <p>Más de 30 años trabajando adentro de empresas, plantas, depósitos y áreas comerciales. Conocemos la operación porque la vivimos.</p>
+        </div>
+
+        <blockquote class="accountant-quote">
+          “Así como tu contador se ocupa de los números de tu empresa, nosotros nos ocupamos de que tu operación funcione en orden y tu empresa tenga rumbo.”
+        </blockquote>
+
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="team-photo">
+              <img src="foto-gonzalo.jpg" alt="Gonzalo Comba" onerror="this.style.display='none';" />
+              <span class="team-initials">GC</span>
+            </div>
+            <h3>Gonzalo Comba</h3>
+            <p class="team-role">Diagnóstico, planta, calidad y obras</p>
+            <p class="team-value">
+              Ve la empresa completa, de la máquina al margen. Diagnostica con evidencia como auditor líder y dirige proyectos de obra y mejora industrial.
+            </p>
+          </article>
+
+          <article class="team-card">
+            <div class="team-photo">
+              <img src="foto-mariano.jpg" alt="Mariano Rufino" onerror="this.style.display='none';" />
+              <span class="team-initials">MR</span>
+            </div>
+            <h3>Mariano Rufino</h3>
+            <p class="team-role">Stock, logística, compras y ejecución</p>
+            <p class="team-value">
+              Ordena depósitos, abastecimiento, reposición y planificación de entregas para bajar faltantes y liberar plata inmovilizada.
+            </p>
+          </article>
+
+          <article class="team-card">
+            <div class="team-photo">
+              <img src="foto-veronica.jpg" alt="Verónica Salcovsky" onerror="this.style.display='none';" />
+              <span class="team-initials">VS</span>
+            </div>
+            <h3>Verónica Salcovsky</h3>
+            <p class="team-role">Gestión a la Vista, seguimiento y equipo</p>
+            <p class="team-value">
+              Ordena la atención comercial, los tableros, las tareas automáticas y acompaña a tu gente para que los cambios se sostengan todos los días.
+            </p>
+          </article>
+        </div>
+
+        <div class="not-us-box">
+          <h3>Qué NO somos</h3>
+          <p>
+            No somos una consultora que deja un informe en un cajón ni vendemos software. <strong>Trabajamos adentro de tu empresa, con tu gente, con las herramientas que ya tenés, y medimos el resultado.</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. PREGUNTAS FRECUENTES -->
+    <section class="section" id="faq">
+      <div class="container container-narrow">
+        <div class="section-header">
+          <h2>Preguntas frecuentes</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>¿Qué pasa si el Mapeo Inicial no me sirve?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>No lo pagás. El Mapeo Inicial dura una semana, se abona 100% contra entrega y tiene garantía directa: si en la reunión de devolución sentís que no te aportó claridad ni valor, no pagás nada.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>¿Tengo que cambiar el sistema de gestión que ya uso?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>No. Trabajamos con las herramientas que tu empresa ya paga (planillas, Google, Microsoft, WhatsApp Business o tu sistema actual). Primero ordenamos cómo se trabaja para que lo que ya tenés rinda de verdad.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>¿Cuánto tiempo me va a llevar a mí como dueño?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Solo necesitamos un responsable interno en tu equipo y 30 minutos tuyos por semana para revisar el avance y tomar decisiones. El resto del trabajo operativo de ordenamiento lo llevamos adelante nosotros.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>¿Usan inteligencia artificial?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Lo central siempre es ordenar el proceso. Si una tarea repetitiva conviene automatizarla (avisos de presupuestos, alertas de stock o tableros que se actualizan solos), usamos herramientas actuales sobre lo que ya tenés y te mostramos cómo funciona antes. Si no hace falta tecnología, no la ponemos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. LLAMADO FINAL Y CONTACTO -->
+    <section class="cta-strip">
+      <div class="container cta-strip-inner">
+        <div>
+          <h2>¿Dónde se pierde la plata en tu empresa?</h2>
+          <p>Lo averiguamos en una semana. Sin anticipo y con resultado medido.</p>
+        </div>
+        <a href="#contacto" class="btn btn-amber btn-lg">Pedí tu Mapeo Inicial</a>
+      </div>
+    </section>
+
+    <section class="section section-light" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <span class="badge-teal">Hablemos</span>
+          <h2>Pedí tu Mapeo Inicial</h2>
+          <p>
+            Completá estos datos y te contactamos en menos de 24 horas hábiles para coordinar una charla corta de 20 minutos y ver si podemos ayudarte.
+          </p>
+
+          <div class="contact-channels">
+            <a href="https://wa.me/5491100000000?text=Hola%2C%20vi%20la%20web%20y%20quiero%20saber%20m%C3%A1s%20sobre%20el%20Mapeo%20Inicial" target="_blank" rel="noopener noreferrer" class="channel-card" id="wa-direct-link">
+              <div class="channel-icon bg-green-soft">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              </div>
+              <div>
+                <strong>Escribinos por WhatsApp</strong>
+                <span>Respuesta rápida directa con el equipo</span>
+              </div>
+            </a>
+
+            <!-- Reemplazar href por tu enlace real de Google Calendar o Calendly -->
+            <a href="#contacto" class="channel-card" id="agenda-link">
+              <div class="channel-icon bg-navy-soft">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <div>
+                <strong>Agendá una charla de 20 minutos</strong>
+                <span>Elegí día y horario sin compromiso</span>
+              </div>
+            </a>
+          </div>
+
+          <p class="coverage-note">
+            <strong>Alcance:</strong> Córdoba y Buenos Aires (AMBA), y resto del país según proyecto.
+          </p>
+        </div>
+
+        <!-- Formulario corto (Anexo 4, p. 12) listo para Netlify Forms -->
+        <div class="form-card">
+          <form name="mapeo-inicial" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="mapeo-form">
+            <input type="hidden" name="form-name" value="mapeo-inicial" />
+            <p class="sr-only">
+              <label>No completar si sos humano: <input name="bot-field" /></label>
+            </p>
+
+            <div class="form-group">
+              <label for="nombre">Nombre y apellido *</label>
+              <input type="text" id="nombre" name="nombre" required placeholder="Ej.: Martín Gómez" />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="empresa">Empresa *</label>
+                <input type="text" id="empresa" name="empresa" required placeholder="Nombre de tu empresa" />
+              </div>
+
+              <div class="form-group">
+                <label for="rubro">Rubro *</label>
+                <input type="text" id="rubro" name="rubro" required placeholder="Ej.: Alimentos, distribuidora..." />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="telefono">Teléfono / WhatsApp *</label>
+              <input type="tel" id="telefono" name="telefono" required placeholder="Ej.: +54 9 351 000 0000" />
+            </div>
+
+            <div class="form-group">
+              <label for="problema">¿Qué te gustaría resolver? *</label>
+              <select id="problema" name="problema" required>
+                <option value="" disabled selected>Elegí una opción</option>
+                <option value="faltantes-entregas">Faltantes y entregas</option>
+                <option value="stock">Stock y depósito</option>
+                <option value="maquinas">Máquinas paradas y mantenimiento</option>
+                <option value="numeros-seguimiento">Números, presupuestos y seguimiento</option>
+                <option value="obra-ampliacion">Obra o ampliación</option>
+                <option value="otro">Otro problema operativo</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-amber btn-full btn-lg">Pedí tu Mapeo Inicial</button>
+
+            <p class="form-privacy">
+              Tus datos están protegidos por la Ley 25.326. Solo los usamos para responder tu consulta.
+            </p>
+          </form>
+
+          <!-- Mensaje de confirmación tras enviar -->
+          <div class="form-success" id="form-success" hidden>
+            <div class="success-icon">✓</div>
+            <h3>¡Recibimos tu consulta!</h3>
+            <p>Te vamos a escribir a la brevedad con la ficha del Mapeo Inicial. Si preferís agilizarlo ahora mismo, podés escribirnos directo por WhatsApp:</p>
+            <a href="#" id="success-wa-btn" target="_blank" rel="noopener noreferrer" class="btn btn-amber">Continuar por WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 10. PIE DE PÁGINA -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>PRAXIA Group</strong> · Soluciones operativas y estratégicas
+        <p class="footer-loc">Córdoba · Buenos Aires, Argentina · <em>Optimizamos procesos. Impulsamos tu negocio.</em></p>
+      </div>
+      <div class="footer-links">
+        <a href="https://wa.me/5491100000000?text=Hola%2C%20vi%20la%20web%20y%20quiero%20saber%20m%C3%A1s%20sobre%20el%20Mapeo%20Inicial" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="mailto:contacto@praxiagroup.com.ar">Correo</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <button type="button" class="link-btn" id="open-privacy">Política de privacidad (Ley 25.326)</button>
+      </div>
+    </div>
+    <div class="brand-tricolor-bar" aria-hidden="true">
+      <span class="bar-orange"></span>
+      <span class="bar-grey"></span>
+      <span class="bar-blue"></span>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+  <a
+    href="https://wa.me/5491100000000?text=Hola%2C%20vi%20la%20web%20y%20quiero%20saber%20m%C3%A1s%20sobre%20el%20Mapeo%20Inicial"
+    class="wa-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Escribir por WhatsApp sobre el Mapeo Inicial"
+  >
+    <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26" aria-hidden="true">
+      <path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.766.469 3.484 1.344 5l-1.406 5.156 5.281-1.391a9.923 9.923 0 0 0 4.75 1.219c5.516 0 9.969-4.453 9.969-9.969S17.547 2 12.031 2zm5.813 14.078c-.25.703-1.438 1.344-2 1.422-.516.078-1.188.109-1.922-.125-.453-.141-1.031-.344-1.766-.656-3.094-1.344-5.109-4.469-5.266-4.672-.156-.203-1.266-1.688-1.266-3.219 0-1.531.797-2.281 1.078-2.594.281-.312.625-.391.828-.391h.594c.188 0 .453-.078.703.531.25.609.859 2.109.938 2.266.078.156.125.344.016.547-.109.203-.156.344-.312.516-.156.172-.328.391-.469.516-.156.156-.312.328-.141.625.172.297.781 1.297 1.672 2.094 1.156 1.031 2.125 1.344 2.422 1.5.297.156.469.125.641-.078.172-.203.75-.875.953-1.172.203-.297.406-.25.688-.141.281.109 1.781.844 2.094 1 .312.156.516.234.594.359.078.125.078.734-.172 1.438z"/>
+    </svg>
+    <span class="wa-tooltip">Pedí tu Mapeo</span>
+  </a>
+
+  <!-- MODAL DE CASOS DE ÉXITO -->
+  <div class="modal" id="case-modal" hidden role="dialog" aria-modal="true" aria-labelledby="case-modal-title">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog">
+      <button class="modal-close" data-close-modal aria-label="Cerrar">×</button>
+      <span class="badge-teal" id="case-modal-tag">Caso</span>
+      <h3 id="case-modal-title">Título del caso</h3>
+      <div class="case-modal-metric" id="case-modal-metric"></div>
+      <div class="case-modal-section">
+        <h4>Situación inicial</h4>
+        <p id="case-modal-situation"></p>
+      </div>
+      <div class="case-modal-section">
+        <h4>Qué hicimos</h4>
+        <ul id="case-modal-actions"></ul>
+      </div>
+      <div class="modal-footer">
+        <a href="#contacto" class="btn btn-amber" data-close-modal>Pedí tu Mapeo Inicial</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL DE POLÍTICA DE PRIVACIDAD (LEY 25.326) -->
+  <div class="modal" id="privacy-modal" hidden role="dialog" aria-modal="true" aria-labelledby="privacy-modal-title">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog">
+      <button class="modal-close" data-close-modal aria-label="Cerrar">×</button>
+      <h3 id="privacy-modal-title">Política de Privacidad (Ley 25.326)</h3>
+      <p>
+        En cumplimiento de la Ley Nacional N.° 25.326 de Protección de Datos Personales de la República Argentina, informamos que los datos ingresados en el formulario de contacto (nombre, empresa, rubro, teléfono y consulta) son utilizados exclusivamente para responder tu solicitud y coordinar una reunión informativa sobre el Mapeo Inicial.
+      </p>
+      <p>
+        No vendemos, cedemos ni compartimos tus datos con terceros. Podés solicitar en cualquier momento el acceso, rectificación o supresión de tus datos escribiendo a nuestro correo electrónico de contacto.
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
