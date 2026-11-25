@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'caso-2': {
       tag: 'Stock y Depósito',
       title: 'Orden de depósito y reducción de compras de urgencia',
-      metric: '-35% faltantes críticos en 10 semanas',
+      metric: '-35% de faltantes críticos',
       situation:
         'Existía capital inmovilizado en materiales de baja rotación mientras faltaban insumos clave para entregar pedidos a tiempo.',
       actions: [
